@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1B51931FC0752600DCD622 /* chemistry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B518F1FC0752600DCD622 /* chemistry.mp3 */; };
+		0A1B51941FC0752600DCD622 /* whole.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B51901FC0752600DCD622 /* whole.mp3 */; };
+		0A1B51951FC0752600DCD622 /* think.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B51911FC0752600DCD622 /* think.mp3 */; };
+		0A1B51961FC0752600DCD622 /* hello.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A1B51921FC0752600DCD622 /* hello.mp3 */; };
+		0A1B51991FC075A500DCD622 /* WordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B51981FC075A500DCD622 /* WordsViewController.swift */; };
+		0A1B519B1FC0764200DCD622 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1B519A1FC0764200DCD622 /* WordViewController.swift */; };
 		0A2E7D901FBF6515007FD097 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E7D8F1FBF6515007FD097 /* AppDelegate.swift */; };
-		0A2E7D921FBF6515007FD097 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E7D911FBF6515007FD097 /* ViewController.swift */; };
 		0A2E7D951FBF6515007FD097 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2E7D931FBF6515007FD097 /* Main.storyboard */; };
 		0A2E7D971FBF6515007FD097 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A2E7D961FBF6515007FD097 /* Assets.xcassets */; };
 		0A2E7D9A1FBF6515007FD097 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2E7D981FBF6515007FD097 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1B518F1FC0752600DCD622 /* chemistry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = chemistry.mp3; sourceTree = "<group>"; };
+		0A1B51901FC0752600DCD622 /* whole.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = whole.mp3; sourceTree = "<group>"; };
+		0A1B51911FC0752600DCD622 /* think.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = think.mp3; sourceTree = "<group>"; };
+		0A1B51921FC0752600DCD622 /* hello.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hello.mp3; sourceTree = "<group>"; };
+		0A1B51981FC075A500DCD622 /* WordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsViewController.swift; sourceTree = "<group>"; };
+		0A1B519A1FC0764200DCD622 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
 		0A2E7D8C1FBF6515007FD097 /* SpeechrecognitionExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechrecognitionExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A2E7D8F1FBF6515007FD097 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A2E7D911FBF6515007FD097 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A2E7D941FBF6515007FD097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A2E7D961FBF6515007FD097 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A2E7D991FBF6515007FD097 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +45,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A1B518E1FC0750C00DCD622 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				0A1B518F1FC0752600DCD622 /* chemistry.mp3 */,
+				0A1B51921FC0752600DCD622 /* hello.mp3 */,
+				0A1B51911FC0752600DCD622 /* think.mp3 */,
+				0A1B51901FC0752600DCD622 /* whole.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		0A1B51971FC0757400DCD622 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0A1B51981FC075A500DCD622 /* WordsViewController.swift */,
+				0A1B519A1FC0764200DCD622 /* WordViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		0A2E7D831FBF6515007FD097 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +84,9 @@
 		0A2E7D8E1FBF6515007FD097 /* SpeechrecognitionExample */ = {
 			isa = PBXGroup;
 			children = (
+				0A1B51971FC0757400DCD622 /* Controllers */,
+				0A1B518E1FC0750C00DCD622 /* Sounds */,
 				0A2E7D8F1FBF6515007FD097 /* AppDelegate.swift */,
-				0A2E7D911FBF6515007FD097 /* ViewController.swift */,
 				0A2E7D931FBF6515007FD097 /* Main.storyboard */,
 				0A2E7D961FBF6515007FD097 /* Assets.xcassets */,
 				0A2E7D981FBF6515007FD097 /* LaunchScreen.storyboard */,
@@ -123,9 +154,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1B51941FC0752600DCD622 /* whole.mp3 in Resources */,
 				0A2E7D9A1FBF6515007FD097 /* LaunchScreen.storyboard in Resources */,
+				0A1B51961FC0752600DCD622 /* hello.mp3 in Resources */,
 				0A2E7D971FBF6515007FD097 /* Assets.xcassets in Resources */,
 				0A2E7D951FBF6515007FD097 /* Main.storyboard in Resources */,
+				0A1B51931FC0752600DCD622 /* chemistry.mp3 in Resources */,
+				0A1B51951FC0752600DCD622 /* think.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A2E7D921FBF6515007FD097 /* ViewController.swift in Sources */,
+				0A1B519B1FC0764200DCD622 /* WordViewController.swift in Sources */,
+				0A1B51991FC075A500DCD622 /* WordsViewController.swift in Sources */,
 				0A2E7D901FBF6515007FD097 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
