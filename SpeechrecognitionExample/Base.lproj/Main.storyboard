@@ -49,9 +49,45 @@
                     <view key="view" contentMode="scaleToFill" id="etB-TK-TWr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17w-kr-nhv">
+                                <rect key="frame" x="10" y="104" width="355" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8S-SY-tVs">
+                                <rect key="frame" x="10" y="154" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEv-No-ILG">
+                                <rect key="frame" x="1" y="215" width="355" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playWordAction:" destination="3Qb-fB-FNg" eventType="touchUpInside" id="oqd-Eh-rnU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ind-Zb-Jmy" firstAttribute="trailing" secondItem="QEv-No-ILG" secondAttribute="trailing" constant="19" id="3qa-1d-Csf"/>
+                            <constraint firstItem="17w-kr-nhv" firstAttribute="top" secondItem="ind-Zb-Jmy" secondAttribute="top" constant="40" id="Rse-Nw-07D"/>
+                            <constraint firstItem="h8S-SY-tVs" firstAttribute="leading" secondItem="ind-Zb-Jmy" secondAttribute="leading" constant="10" id="XGz-lg-Cs0"/>
+                            <constraint firstItem="ind-Zb-Jmy" firstAttribute="trailing" secondItem="17w-kr-nhv" secondAttribute="trailing" constant="10" id="f3y-Rn-66l"/>
+                            <constraint firstItem="h8S-SY-tVs" firstAttribute="top" secondItem="17w-kr-nhv" secondAttribute="bottom" constant="20" id="obR-5N-1wj"/>
+                            <constraint firstItem="QEv-No-ILG" firstAttribute="leading" secondItem="ind-Zb-Jmy" secondAttribute="leading" constant="1" id="tWj-t2-yDB"/>
+                            <constraint firstItem="QEv-No-ILG" firstAttribute="top" secondItem="h8S-SY-tVs" secondAttribute="bottom" constant="40" id="tdS-qG-C3N"/>
+                            <constraint firstItem="ind-Zb-Jmy" firstAttribute="trailing" secondItem="h8S-SY-tVs" secondAttribute="trailing" constant="10" id="uw7-GR-0PR"/>
+                            <constraint firstItem="17w-kr-nhv" firstAttribute="leading" secondItem="ind-Zb-Jmy" secondAttribute="leading" constant="10" id="z6D-50-H1b"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ind-Zb-Jmy"/>
                     </view>
+                    <connections>
+                        <outlet property="transcriptionLabel" destination="h8S-SY-tVs" id="0nk-qG-XYX"/>
+                        <outlet property="wordLabel" destination="17w-kr-nhv" id="LQk-uG-DjK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S47-sb-PYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
