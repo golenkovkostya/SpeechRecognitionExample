@@ -69,22 +69,45 @@
                                     <action selector="playWordAction:" destination="3Qb-fB-FNg" eventType="touchUpInside" id="oqd-Eh-rnU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwP-02-iTx">
+                                <rect key="frame" x="10" y="285" width="355" height="30"/>
+                                <state key="normal" title="Recognize"/>
+                                <state key="selected" title="Stop"/>
+                                <connections>
+                                    <action selector="recognizeSpeechAction:" destination="3Qb-fB-FNg" eventType="touchUpInside" id="8Di-F3-wJG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQP-dN-wcw">
+                                <rect key="frame" x="10" y="355" width="355" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ind-Zb-Jmy" firstAttribute="trailing" secondItem="QEv-No-ILG" secondAttribute="trailing" constant="19" id="3qa-1d-Csf"/>
+                            <constraint firstItem="UQP-dN-wcw" firstAttribute="leading" secondItem="ind-Zb-Jmy" secondAttribute="leading" constant="10" id="7xM-g1-evo"/>
+                            <constraint firstItem="OwP-02-iTx" firstAttribute="leading" secondItem="ind-Zb-Jmy" secondAttribute="leading" constant="10" id="Cce-65-XNs"/>
+                            <constraint firstItem="UQP-dN-wcw" firstAttribute="top" secondItem="OwP-02-iTx" secondAttribute="bottom" constant="40" id="J6y-I6-rgW"/>
+                            <constraint firstItem="ind-Zb-Jmy" firstAttribute="trailing" secondItem="OwP-02-iTx" secondAttribute="trailing" constant="10" id="KN6-GX-mkp"/>
                             <constraint firstItem="17w-kr-nhv" firstAttribute="top" secondItem="ind-Zb-Jmy" secondAttribute="top" constant="40" id="Rse-Nw-07D"/>
                             <constraint firstItem="h8S-SY-tVs" firstAttribute="leading" secondItem="ind-Zb-Jmy" secondAttribute="leading" constant="10" id="XGz-lg-Cs0"/>
+                            <constraint firstItem="ind-Zb-Jmy" firstAttribute="trailing" secondItem="UQP-dN-wcw" secondAttribute="trailing" constant="10" id="Zrn-XR-fow"/>
+                            <constraint firstItem="ind-Zb-Jmy" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="UQP-dN-wcw" secondAttribute="bottom" constant="40" id="ZvH-JZ-0JB"/>
                             <constraint firstItem="ind-Zb-Jmy" firstAttribute="trailing" secondItem="17w-kr-nhv" secondAttribute="trailing" constant="10" id="f3y-Rn-66l"/>
                             <constraint firstItem="h8S-SY-tVs" firstAttribute="top" secondItem="17w-kr-nhv" secondAttribute="bottom" constant="20" id="obR-5N-1wj"/>
                             <constraint firstItem="QEv-No-ILG" firstAttribute="leading" secondItem="ind-Zb-Jmy" secondAttribute="leading" constant="1" id="tWj-t2-yDB"/>
                             <constraint firstItem="QEv-No-ILG" firstAttribute="top" secondItem="h8S-SY-tVs" secondAttribute="bottom" constant="40" id="tdS-qG-C3N"/>
+                            <constraint firstItem="OwP-02-iTx" firstAttribute="top" secondItem="QEv-No-ILG" secondAttribute="bottom" constant="40" id="ubA-Br-LLY"/>
                             <constraint firstItem="ind-Zb-Jmy" firstAttribute="trailing" secondItem="h8S-SY-tVs" secondAttribute="trailing" constant="10" id="uw7-GR-0PR"/>
                             <constraint firstItem="17w-kr-nhv" firstAttribute="leading" secondItem="ind-Zb-Jmy" secondAttribute="leading" constant="10" id="z6D-50-H1b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ind-Zb-Jmy"/>
                     </view>
                     <connections>
+                        <outlet property="recognizeButton" destination="OwP-02-iTx" id="AsL-En-vrJ"/>
+                        <outlet property="resultLabel" destination="UQP-dN-wcw" id="4nm-Sy-sAZ"/>
                         <outlet property="transcriptionLabel" destination="h8S-SY-tVs" id="0nk-qG-XYX"/>
                         <outlet property="wordLabel" destination="17w-kr-nhv" id="LQk-uG-DjK"/>
                     </connections>
