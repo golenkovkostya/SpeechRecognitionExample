@@ -74,6 +74,8 @@ class WordViewController: UIViewController {
     }
     
     fileprivate func startRecognition () {
+        resultLabel.text = ""
+        
         let node = audioEngine.inputNode
         let recognitionFormat = node.outputFormat(forBus: 0)
         
@@ -92,12 +94,17 @@ class WordViewController: UIViewController {
         
         recognitionTask = speechRecognizer?.recognitionTask(with: request, resultHandler: {
             [unowned self] (result, error) in
-            if let res = result?.bestTranscription {
+            if let res = result {
+                
                 DispatchQueue.main.async { [unowned self] in
-                    self.resultLabel.text = res.formattedString;
+                    self.resultLabel.text = res.bestTranscription.formattedString;
+                }
+                if res.isFinal {
+                    node.removeTap(onBus: 0)
                 }
             } else if let error = error {
                 print("\(error.localizedDescription)")
+                node.removeTap(onBus: 0)
             }
         })
     }
